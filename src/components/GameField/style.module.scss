@@ -1,0 +1,11 @@
+.game-field {
+    width: var(--field-size);
+    height: var(--field-size);
+    background-color: #bbada0;
+    border-radius: 8px;
+    padding: var(--gap);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}

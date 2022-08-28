@@ -1,0 +1,18 @@
+.container {
+    background-color: rgba(238, 228, 218, 0.35);
+    border-radius: 4px;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    @for $i from 1 to 17 {
+        &:nth-child(#{$i}) {
+            @if $i % 4 == 0 {
+                margin-right: 0;
+            } @else {
+                margin-right: var(--gap);
+            }
+            @if $i < 12 {
+                margin-bottom: var(--gap);
+            }
+        }
+    }
+}

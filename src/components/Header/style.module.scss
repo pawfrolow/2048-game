@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #7c6a59;
+    position: relative;
+    &:after {
+        content: "by pawfrolow";
+        position: absolute;
+        bottom: -2px;
+        right: -42px;
+        font-size: 12px;
+        font-style: italic;
+        transform: rotate(-15deg);
+    }
+}

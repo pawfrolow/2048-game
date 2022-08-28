@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: var(--field-size);
+    .new-game {
+        height: 56px;
+        padding: 0 24px;
+        cursor: pointer;
+        background: #7c6a59;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        transition: opacity 0.3s ease;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
