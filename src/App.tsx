@@ -140,7 +140,7 @@ const App = () => {
                 if (result[i].value === 0) continue;
 
                 const isEqual = result[i].value === result[targetIndex].value;
-                const isMerged = result[targetIndex].merged && result[i].merged;
+                const isMerged = result[targetIndex].merged || result[i].merged;
                 const isNeedMerge = isEqual && !isMerged;
 
                 if (isNeedMerge) {
